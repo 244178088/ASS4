@@ -7,10 +7,10 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-
+# Create empty graph G for Krackhardt kite
 G = nx.Graph()
 
-
+# Add nodes with positions
 G.add_node('Carol', pos = (2, 5))
 G.add_node('Andre', pos = (1, 4))
 G.add_node('Fernando', pos = (3, 4))
@@ -30,12 +30,12 @@ G.add_edges_from([  ('Carol', 'Andre'), ('Carol', 'Fernando'), ('Carol', 'Ed'),
                 ])
 pos = nx.get_node_attributes(G, 'pos')
 
-
+# Draw graph nodes and edges at positions specified by pos
 nx.draw(G, pos, with_labels = True)
 plt.show()
 
 
-
+# In[ ]:
 
 
 
